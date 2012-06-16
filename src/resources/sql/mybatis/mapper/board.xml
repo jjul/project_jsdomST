@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jsdom.board.dao.BoardDao">
+    
+    <select id="list" resultType="Board">
+    	<![CDATA[
+		SELECT SQL_CALC_FOUND_ROWS * 
+		FROM 
+		(
+			SELECT @RNUM:=@RNUM+1 AS ROWNUM, NO, NAME, SUBJECT, CONTENT, REGDATE
+			FROM BOARD, (SELECT @RNUM:=0) R
+			ORDER BY ROWNUM DESC
+		) SB
+		]]>
+	</select>
+	
+	<select id="listCnt" resultType="int">
+		<!-- SELECT FOUND_ROWS() -->
+		SELECT COUNT(*) AS CNT FROM BOARD
+	</select>
+	
+	<select id="content" resultType="Board" parameterType="int">
+		SELECT NO, NAME, SUBJECT, CONTENT, REGDATE  
+		FROM BOARD
+		WHERE NO = #{no}
+	</select>
+	
+	<insert id="write" parameterType="Board">
+		INSERT INTO BOARD (NAME, SUBJECT, CONTENT, REGDATE)
+		VALUES (#{name}, #{subject}, #{content}, sysdate())
+	</insert>
+	
+	<update id="update" parameterType="Board">
+		UPDATE BOARD SET 
+		SUBJECT=#{subject}, CONTENT=#{content}, REGDATE=sysdate() 
+		WHERE NO=#{no}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+		DELETE FROM BOARD
+		WHERE NO=#{no}
+	</delete>
+    
+</mapper>

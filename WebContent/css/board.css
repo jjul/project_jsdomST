@@ -1,0 +1,298 @@
+/*list 관련 css */
+
+body {
+ font-family: 굴림;
+ font-size: 12px;
+}
+
+tr#row {
+    color: #A4A1A2;
+    font-family:굴림;
+    font-size:10pt;
+}
+
+tr#hd td {
+    color:#F58D8D;
+    font-family:굴림;
+    font-size:10pt;
+}
+
+#wrapper {
+    margin: 0 0 0 20%; 
+    width: 670px;
+}
+
+#no {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 3px 0px 0px 0px;
+    padding: 5px;
+    height: 20px;
+    width: 45px;
+    float: left;
+    text-align: center;
+}
+
+#item_info {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 3px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    height: 20px;
+    width: 180px;
+    float: left;
+}
+
+#subject {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 3px 0px 0px 0px;
+    padding: 5px 0px 0px 10px;
+    height: 20px;
+    width: 415px;
+    float: left;
+}
+
+#name {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 3px 0px 0px 0px;
+    padding: 5px;
+    height: 20px;
+    width: 82px;
+    float: left;
+    text-align: center;
+}
+
+#regdate {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 3px 0px 0px 0px;
+    padding: 5px;
+    height: 20px;
+    width: 70px;
+    float: left;
+    text-align: center;
+}
+
+#buttons {
+    border: 0px solid #FFCC99;
+    width: 650px;
+    float: left;
+}
+
+#btn_write {
+    border: 0px solid #FFCC99;
+    width: 50px;
+    float: right;
+}
+
+/*content 관련 css */
+
+#subject_ct {
+    font: normal normal bold 13px/2 굴림;
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 1px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: 25px;
+    width: 650px;
+    float: left;
+    text-align: center;
+}
+
+#name_ct_1 {
+    font: normal normal bold 12px/2 굴림;
+    color: #666666;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 1px 0px 0px 0px;
+    height: 20px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#name_ct_2 {
+    font: normal normal normal 12px/2 굴림;
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 1px;
+    height: 20px;
+    width: 90px;
+    float: left;
+    text-align: left;
+}
+
+#regdate_ct_1 {
+    font: normal normal bold 12px/2 굴림;
+    color: #666666;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 1px;
+    height: 20px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#regdate_ct_2 {
+    font: normal normal normal 12px/2 굴림;
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 1px;
+    height: 20px;
+    width: 170px;
+    float: left;
+    text-align: left;
+}
+
+#space_ct_1 {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 0px;
+    height: 20px;
+    width: 650px;
+    display: block;
+    text-align: left;
+}
+
+#space_ct_2 {
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 0px;
+    height: 15px;
+    width: 20px;
+    float: left;
+    text-align: left;
+}
+
+#content_ct {
+    color: #666666;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 2px 0px 0px 0px;
+    padding: 0px;
+    width: 630px;
+    float: left;
+    text-align: left;
+}
+
+#buttons_ct {
+    border: 0px solid #FFCC99;
+    width: 670px;
+    float: left;
+}
+
+#btn_update_ct {
+    border: 0px solid #FFCC99;
+    margin: 0px 0px 0px 250px;
+    width: 50px;
+    float: left;
+}
+
+#btn_del_ct {
+    border: 0px solid #FFCC99;
+    margin: 0px 0px 0px 5px;
+    width: 50px;
+    float: left;
+}
+
+#btn_list_ct {
+    border: 0px solid #FFCC99;
+    width: 50px;
+    float: right;
+}
+
+
+/*write 관련 css */
+
+#subject_wr {
+    font: normal normal bold 12px/2 굴림;
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 5px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    height: 25px;
+    width: 75px;
+    float: left;
+    text-align: left;
+}
+
+#name_wr {
+    font: normal normal bold 12px/2 굴림;
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 5px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    height: 25px;
+    width: 75px;
+    float: left;
+    text-align: left;
+}
+
+#text_wr {
+    font: normal normal bold 12px/2 굴림;
+    color: #999999;
+    border: 0px solid #FFCC99;
+    background: #FFFFFF;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 7px;
+    height: 25px;
+    width: 450px;
+    float: left;
+    text-align: left;
+}
+
+#buttons_wr {
+    border: 0px solid #FFCC99;
+    width: 670px;
+    float: left;
+}
+
+#btn_reg_wr {
+    border: 0px solid #FFCC99;
+    margin: 0px 0px 0px 250px;
+    width: 50px;
+    float: left;
+}
+
+#btn_cancel_wr {
+    border: 0px solid #FFCC99;
+    margin: 0px 0px 0px 5px;
+    width: 50px;
+    float: left;
+}
+
+#btn_list_wr {
+    border: 0px solid #FFCC99;
+    width: 50px;
+    float: right;
+}
+
+#paging {
+    margin: 0 0 0 35%; 
+}
+
+
+
+
+

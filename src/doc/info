@@ -1,0 +1,16 @@
+** start url:  
+
+http://localhost:8080/project_jsdomST
+http://localhost:8080/project_jsdomST/list/1
+
+
+	
+** mysql table(BOARD)	
+	
+CREATE TABLE BOARD (
+    NO INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    NAME VARCHAR(100) DEFAULT '',
+    SUBJECT VARCHAR(100) DEFAULT '',
+    CONTENT VARCHAR(100) DEFAULT '',
+    REGDATE DATE
+);
